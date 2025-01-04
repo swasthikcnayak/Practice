@@ -8,7 +8,7 @@
 // prototype interface
 interface Prototype{
     Prototype clone();
-    void draw();
+    String draw();
 }
  class Student implements Prototype {
     String name;
@@ -24,8 +24,8 @@ interface Prototype{
         return new Student(this.name, this.roll);
     }
 
-    public void draw(){
-        System.out.println("Draw");
+    public String draw(){
+        return "Draw";
     }
 }
 
@@ -33,5 +33,7 @@ class Main{
     public static void maint(String[] args){
         Prototype std = new Student("name", 0);
         Prototype copy = std.clone();
+        System.out.println(copy.draw());
+        System.out.println(std.draw());
     }
 }
