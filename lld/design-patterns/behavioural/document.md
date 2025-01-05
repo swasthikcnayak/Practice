@@ -41,3 +41,11 @@ Use Case : Sort Strategy, Parking place alottment strategy etc.
 Used when we need all the subclasses to follow certain steps to perform the operation, but also give the flexibility for the logic of those steps are performed.
 
 Use case : Order booking includes validation, credit, debit, book steps: Each subclasses should implement their own way of doing the following operation.
+
+### Interpreter design pattern
+
+This design patter is used for evaluation of the expression. 
+----------------------------------------------------------------------------------------------
+### Command Design pattern
+
+This design pattern turns the requests/function call into objects. Allowing to queue the requests & decouple the sender & receiver.
