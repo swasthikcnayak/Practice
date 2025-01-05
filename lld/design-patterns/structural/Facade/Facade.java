@@ -11,6 +11,25 @@
  * Adapter : Adapter pattern is used to make two interfaces compatible without changing the source code
  */
 
+ class PaymentService{
+    void complete(){
+        
+    }
+ }
+
+ class BookingService{
+    boolean isValid(){
+        return true;
+    }
+
+    void reserve(){
+
+    }
+
+    void book(){
+
+    }
+ }
 
  class Facade {
     PaymentService payment;
@@ -20,7 +39,7 @@
     // we use a facade that will handle all the logics & internal complex objects.
     public void bookTicket(){
         if(booking.isValid()){
-            booking.reserver();
+            booking.reserve();
             payment.complete();
             booking.book();
         }

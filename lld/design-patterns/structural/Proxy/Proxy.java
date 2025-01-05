@@ -83,7 +83,7 @@ class EmployeeFileProxy implements File {
     Employee employee;
 
     EmployeeFileProxy(Employee employee) {
-        this.employee = new EmployeeFile(employee);
+        this.employee = employee;
     }
 
     public void print() {
@@ -94,3 +94,7 @@ class EmployeeFileProxy implements File {
         }
     }
 }
+
+class Employee {
+    int rank;
+} 
