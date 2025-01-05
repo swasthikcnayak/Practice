@@ -7,6 +7,8 @@
 /*
  * 
  * Popular is vending machine & ATM
+ * 
+ * The following is the implementation of the ATM, here only implemented for the AcceptCard state.
  */
 
  interface AtmState {
@@ -60,3 +62,26 @@ class AcceptCard implements AtmState{
    }    
 } 
 
+
+class AcceptAmount implements AtmState{
+
+   Atm atm;
+
+    public AcceptAmount(Atm atm) {
+        this.atm = atm;
+    }
+
+    public void acceptCard(){
+      throw new UnsupportedOperationException("Unimplemented method 'dispenseMoney'");
+    }
+
+   @Override
+   public void acceptAmount() {
+      System.out.println("Card Accepted");
+   }
+
+   @Override
+   public void dispenseMoney() {
+      throw new UnsupportedOperationException("Unimplemented method 'dispenseMoney'");
+   }    
+} 
