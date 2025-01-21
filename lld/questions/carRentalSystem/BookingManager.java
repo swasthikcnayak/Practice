@@ -14,9 +14,14 @@ public class BookingManager {
 
     public Invoice book(User user, Vehicele vehicle, String from, String to) {
         int price = pricicingStrategy.calculatePrice(vehicle, from, to);
-        Booking booking = new Booking(user, vehicle, from, to, price, BookingStatus.PAYMENT_PENDING);
+        Booking booking = new Booking(user, vehicle, from, to, price, BookingStatus.IN_PROGRESS);
         this.bookings.add(booking);
         Invoice invoice = new Invoice(null, booking.id, price);
         return invoice;
+    }
+
+    public void update(Invoice invoice) {
+        Booking booking = this.bookings.get(invoice.bookingId);
+        booking.status = BookingStatus.COMPLETED;
     }
 }

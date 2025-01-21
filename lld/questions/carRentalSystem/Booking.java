@@ -20,7 +20,7 @@ public class Booking {
 }
 
 enum BookingStatus{
-    RESERVED,
-    PAYMENT_PENDING,
-    BOOKED,
+    IN_PROGRESS,
+    COMPLETED,
+    CANCELLED,
 }

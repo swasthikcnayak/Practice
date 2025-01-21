@@ -21,4 +21,13 @@ public class Store {
        return bookingManager.book(user, vehicele, from, to);
     }
 
+    public void payInvoice(Payment payment, Invoice invoice){
+        invoice.pay(payment);
+        bookingManager.update(invoice);
+    }
+
+    public void completeBooking(int bookingId){
+        // mark the booking as complete
+    }
+
 }
