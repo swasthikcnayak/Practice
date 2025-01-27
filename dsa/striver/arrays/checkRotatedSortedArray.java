@@ -1,4 +1,4 @@
-package Practice.dsa.striver;
+package Practice.dsa.striver.arrays;
 
 public class checkRotatedSortedArray {
     

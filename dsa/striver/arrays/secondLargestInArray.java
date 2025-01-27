@@ -1,8 +1,8 @@
-package Practice.dsa.striver;
+package Practice.dsa.striver.arrays;
 
 public class secondLargestInArray {
     
-    private int secondLargestElement(int[] arr){
+    public int secondLargestElement(int[] arr){
         int largestIdx = 0;
         int secondLIdx = 0;
 

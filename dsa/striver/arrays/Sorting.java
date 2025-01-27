@@ -1,4 +1,4 @@
-package Practice.dsa.striver;
+package Practice.dsa.striver.arrays;
 
 public class Sorting {
 
@@ -79,7 +79,7 @@ public class Sorting {
         }
     }
 
-    private void quickSort(int[] arr, int i, int j) {
+    public void quickSort(int[] arr, int i, int j) {
         if (i < j) {
             int pivot = getPivotIdx(arr, i, j);
             quickSort(arr, i, pivot - 1);
@@ -87,7 +87,7 @@ public class Sorting {
         }
     }
 
-    private int getPivotIdx(int[] arr, int i, int j) {
+    public int getPivotIdx(int[] arr, int i, int j) {
         int low = i;
         int pivot = arr[i];
         while (i < j) {
@@ -105,7 +105,7 @@ public class Sorting {
         return j;
     }
 
-    private void swap(int[] arr, int i, int j) {
+    public void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
