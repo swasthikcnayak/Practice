@@ -3,6 +3,8 @@ package Practice.dsa.striver.arrays;
 public class checkRotatedSortedArray {
     
     /*
+    1752 LEETCODE 
+    https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/
      * We check with the previous element, only once allowed to go dip, 
      * we need to check for frist element with last element : this is an edge case
      */
